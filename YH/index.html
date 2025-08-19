@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Hesham Jadallah – AI Engineer & Data Scientist</title>
+  <meta name="description" content="Portfolio of Youssef Hesham Jadallah, an AI Engineer & Data Scientist specializing in Machine Learning, Deep Learning, Computer Vision, and Interactive Dashboards.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Youssef Hesham Jadallah – AI Engineer & Data Scientist">
+  <meta property="og:description" content="Crafting cutting-edge AI solutions with expertise in ML, Deep Learning, Computer Vision, and Data Analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/201996022?v=4">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Youssef Hesham Jadallah – AI Engineer & Data Scientist">
+  <meta name="twitter:description" content="Crafting cutting-edge AI solutions with expertise in ML, Deep Learning, Computer Vision, and Data Analysis.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/201996022?v=4">
+  
+  <meta name="theme-color" content="#667eea">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+  
+  <!-- Inline Styles -->
+  <style>
+    :root {
+      --color-primary: #667eea;
+      --color-accent: #764ba2;
+      --color-dark: #0f172a;
+      --color-dark-light: #1e293b;
+      --glass-bg: rgba(15, 23, 42, 0.6);
+      --glass-border: rgba(148, 163, 184, 0.15);
+      --shadow-glow: 0 10px 30px rgba(102, 126, 234, 0.2);
+      --transition: all 0.3s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background-color: var(--color-dark);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overscroll-behavior: none;
+    }
+
+    .glass-effect {
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      transition: var(--transition);
+    }
+
+    .glass-effect:hover {
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.4s;
+    }
+
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(102, 126, 234, 0.4);
+      background: transparent;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .btn-outline:hover {
+      background: rgba(102, 126, 234, 0.1);
+      border-color: rgba(102, 126, 234, 0.7);
+      transform: translateY(-2px);
+    }
+
+    .tech-badge {
+      background: rgba(102, 126, 234, 0.15);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .tech-badge:hover {
+      background: rgba(102, 126, 234, 0.25);
+      border-color: rgba(102, 126, 234, 0.5);
+      transform: translateY(-2px);
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      transition: var(--transition);
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 70%;
+    }
+
+    .hero-bg {
+      background: radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.2) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.2) 0%, transparent 50%),
+                  radial-gradient(circle at 50% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%);
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(102, 126, 234, 0.4) 50%, transparent 100%);
+      margin: 3rem 0;
+    }
+
+    .avatar-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .avatar-container::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      border-radius: 50%;
+      z-index: -1;
+      animation: glow 4s ease-in-out infinite alternate;
+    }
+
+    .avatar-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .skill-bar {
+      width: 100%;
+      transition: width 1.5s ease-in-out;
+    }
+
+    .skill-progress {
+      transition: width 1.5s ease-in-out;
+    }
+
+    .contact-form input, .contact-form textarea {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      transition: var(--transition);
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+      outline: none;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      border-radius: 9999px;
+    }
+
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 4px solid var(--color-primary);
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .modal-backdrop {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+    }
+
+    /* Animations */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 15px rgba(102, 126, 234, 0.5), 0 0 25px rgba(118, 75, 162, 0.5); }
+      to { box-shadow: 0 0 25px rgba(102, 126, 234, 0.7), 0 0 35px rgba(118, 75, 162, 0.7); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media (prefers-contrast: high) {
+      :root {
+        --glass-border: rgba(255, 255, 255, 0.4);
+        --color-text-secondary: #f1f5f9;
+      }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .avatar-container {
+        width: 200px;
+        height: 200px;
+      }
+      .hero-bg h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .avatar-container {
+        width: 150px;
+        height: 150px;
+      }
+      .hero-bg h1 {
+        font-size: 2rem;
+      }
+    }
+    /* Skill Section Enhancements */
+.skill-item {
+  position: relative;
+  transition: transform var(--transition);
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+}
+
+.skill-percentage {
+  transition: opacity var(--transition);
+}
+
+.skill-category-toggle .fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.skill-category-toggle[aria-expanded="false"] .fa-chevron-down {
+  transform: rotate(-90deg);
+}
+
+.skill-category-content {
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.skill-category-content.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .skill-bar {
+    height: 2.5px;
+  }
+  .skill-item {
+    font-size: 0.875rem;
+  }
+}
+  </style>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body class="bg-slate-900 text-white font-inter custom-scrollbar overflow-x-hidden">
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="fixed inset-0 flex items-center justify-center bg-slate-900 z-50">
+    <div class="text-center">
+      <div class="loader mb-4 mx-auto"></div>
+      <p class="gradient-text font-semibold text-lg">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="fixed inset-0 flex items-center justify-center bg-black/50 z-50 modal-backdrop">
+    <div class="glass-effect p-8 rounded-xl max-w-md text-center animate-scaleIn">
+      <h2 class="text-2xl font-bold gradient-text mb-4">Welcome to My Portfolio</h2>
+      <p class="text-gray-300 mb-6">Explore my expertise in AI and Data Science solutions.</p>
+      <button onclick="closeWelcomeModal()" class="btn-primary text-white px-6 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500">Enter</button>
+    </div>
+  </div>
+
+  <!-- Particles Background -->
+  <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
+
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-40 bg-slate-900/80 backdrop-blur-md">
+    <nav class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-xl sm:text-2xl font-bold gradient-text font-display">YH</a>
+      <div class="hidden md:flex items-center space-x-2">
+        <a href="#home" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Home</a>
+        <a href="#about" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">About</a>
+        <a href="#education" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Education</a>
+        <a href="#experience" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Experience</a>
+        <a href="#services" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Services</a>
+        <a href="#projects" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Projects</a>
+        <a href="#skills" class="nav-link px-3 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5">Skills</a>
+        <a href="#contact" class="btn-primary text-white px-4 py-2 rounded-xl ml-2 text-sm">Contact</a>
+      </div>
+      <button id="mobileMenuBtn" class="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-primary-500" aria-label="Toggle menu">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden glass-effect border-t border-white/10">
+      <div class="container mx-auto px-4 sm:px-6 py-4 space-y-2">
+        <a href="#home" class="block py-2 text-gray-400 hover:text-white">Home</a>
+        <a href="#about" class="block py-2 text-gray-400 hover:text-white">About</a>
+        <a href="#education" class="block py-2 text-gray-400 hover:text-white">Education</a>
+        <a href="#experience" class="block py-2 text-gray-400 hover:text-white">Experience</a>
+        <a href="#services" class="block py-2 text-gray-400 hover:text-white">Services</a>
+        <a href="#projects" class="block py-2 text-gray-400 hover:text-white">Projects</a>
+        <a href="#skills" class="block py-2 text-gray-400 hover:text-white">Skills</a>
+        <a href="#contact" class="block py-2 text-gray-400 hover:text-white">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center hero-bg relative">
+      <div class="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div class="text-center lg:text-left order-2 lg:order-1">
+            <div class="inline-block bg-gradient-to-r from-primary-500/20 to-accent/20 border border-primary-500/30 text-primary-300 text-xs sm:text-sm font-medium py-2 px-4 rounded-full mb-4 sm:mb-6">
+              <i class="fas fa-brain mr-2"></i>AI Engineer • Data Scientist
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 leading-tight font-display">
+              Youssef Hesham 
+              <span class="gradient-text">Jadallah</span>
+            </h1>
+            <div class="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
+              <div id="typewriter" class="typing-effect"></div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-6 sm:mb-8">
+              <a href="#projects" class="btn-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-primary-500">
+                <i class="fas fa-rocket mr-2"></i>View My Work
+              </a>
+              <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" rel="noopener noreferrer" class="btn-outline text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-primary-500">
+                <i class="fab fa-github mr-2"></i>GitHub Profile
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Power BI</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+          </div>
+          <div class="flex justify-center order-1 lg:order-2">
+            <div class="avatar-container animate-float">
+              <img src="https://avatars.githubusercontent.com/u/201996022?v=4" 
+                   alt="Youssef Hesham Jadallah" 
+                   class="avatar-image" 
+                   loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center">
+          <div class="w-5 h-8 border-2 border-white/30 rounded-full flex justify-center">
+            <div class="w-1 h-2 bg-white/50 rounded-full mt-2 animate-pulse"></div>
+          </div>
+          <p class="text-xs text-gray-400 mt-2">Scroll Down</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">About Me</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Transforming complex data into intelligent solutions</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div class="space-y-4 sm:space-y-6">
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              I'm a <strong class="text-white">passionate Data Science & AI specialist</strong> with expertise in machine learning, deep learning, and intelligent system development. Currently pursuing a Bachelor's in <strong class="text-white">Artificial Intelligence & Data Science</strong> at Alexandria University.
+            </p>
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              Based in Alexandria, Egypt, I specialize in <strong class="text-white">Python-based AI solutions</strong>, including advanced machine learning models, computer vision systems, and interactive data dashboards.
+            </p>
+            <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+              As the founder of <strong class="text-white">Orbyte</strong>, I focus on developing scalable AI solutions that bridge complex algorithms and real-world applications, emphasizing <strong class="text-white">clean code and reproducible research</strong>.
+            </p>
+            <div class="flex flex-wrap gap-3 sm:gap-4">
+              <div class="flex items-center gap-2 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-map-marker-alt text-primary-500"></i>
+                <span>Alexandria, Egypt</span>
+              </div>
+              <div class="flex items-center gap-2 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-graduation-cap text-primary-500"></i>
+                <span>AI & Data Science Student</span>
+              </div>
+              <div class="flex items-center gap-2 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-rocket text-primary-500"></i>
+                <span>Orbyte Founder</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl">
+            <div class="grid grid-cols-2 gap-4 sm:gap-6">
+              <div class="text-center p-4 sm:p-6 bg-gradient-to-br from-primary-500/10 to-accent/10 rounded-xl border border-primary-500/20">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">20+</div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Projects</div>
+              </div>
+              <div class="text-center p-4 sm:p-6 bg-gradient-to-br from-primary-500/10 to-accent/10 rounded-xl border border-primary-500/20">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">2+</div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Years Experience</div>
+              </div>
+              <div class="text-center p-4 sm:p-6 bg-gradient-to-br from-primary-500/10 to-accent/10 rounded-xl border border-primary-500/20">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">15+</div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Technologies</div>
+              </div>
+              <div class="text-center p-4 sm:p-6 bg-gradient-to-br from-primary-500/10 to-accent/10 rounded-xl border border-primary-500/20">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">100%</div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Dedication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">Education</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Academic background in AI & Data Science</p>
+        </div>
+        <div class="max-w-4xl mx-auto glass-effect p-6 sm:p-8 rounded-2xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-accent rounded-full flex items-center justify-center text-white text-3xl">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white">B.Sc. in Artificial Intelligence & Data Science</h3>
+              <p class="text-primary-400 font-medium text-sm sm:text-base">Faculty of Computer Science, Alexandria University</p>
+              <p class="text-gray-300 text-sm">2023 - 2027 (Current Student)</p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-lg font-semibold text-white mb-2">Relevant Coursework & Topics</h4>
+              <ul class="list-disc list-inside text-gray-300 text-sm sm:text-base space-y-1">
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Computer Vision</li>
+                <li>Data Analysis</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Statistics & Probability</li>
+                <li>Software Engineering</li>
+                <li>Linear Algebra</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-white mb-2">Academic & Course Projects</h4>
+              <ul class="list-disc list-inside text-gray-300 text-sm sm:text-base space-y-1">
+                <li>Manual PCA & LDA implementation on ORL dataset — Face Recognition project</li>
+                <li>Student Performance Classification with feature selection methods</li>
+                <li>Price prediction model and small-scale recommendation systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">Professional Experience</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Hands-on expertise in AI and Data Science projects</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="relative pl-12 sm:pl-16">
+            <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary-500 to-accent"></div>
+            <div class="space-y-8 sm:space-y-12">
+              <div class="relative flex items-start gap-6 sm:gap-8">
+                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-accent rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base border-4 border-slate-900">
+                  01
+                </div>
+                <div class="glass-effect p-6 sm:p-8 rounded-2xl flex-1">
+                  <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Data Scientist & AI Engineer</h3>
+                  <p class="text-primary-400 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Freelance • Present</p>
+                  <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Leading end-to-end machine learning projects, specializing in scalable AI solutions, computer vision systems, and interactive dashboards. Delivered 15+ impactful projects.</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge text-xs sm:text-sm">Machine Learning</span>
+                    <span class="tech-badge text-xs sm:text-sm">Computer Vision</span>
+                    <span class="tech-badge text-xs sm:text-sm">MLOps</span>
+                    <span class="tech-badge text-xs sm:text-sm">Streamlit</span>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex items-start gap-6 sm:gap-8">
+                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-accent rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base border-4 border-slate-900">
+                  02
+                </div>
+                <div class="glass-effect p-6 sm:p-8 rounded-2xl flex-1">
+                  <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Data Science Specialist</h3>
+                  <p class="text-primary-400 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Digital Egypt Pioneers Initiative • Nov 2024 – May 2025</p>
+                  <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Intensive program focusing on advanced data science and AI applications, with expertise in MLOps and enterprise-scale solutions.</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge text-xs sm:text-sm">MLflow</span>
+                    <span class="tech-badge text-xs sm:text-sm">Hugging Face</span>
+                    <span class="tech-badge text-xs sm:text-sm">SQL</span>
+                    <span class="tech-badge text-xs sm:text-sm">Power BI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex items-start gap-6 sm:gap-8">
+                <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-accent rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base border-4 border-slate-900">
+                  03
+                </div>
+                <div class="glass-effect p-6 sm:p-8 rounded-2xl flex-1">
+                  <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Founder & AI Developer</h3>
+                  <p class="text-primary-400 font-medium mb-3 sm:mb-4 text-sm sm:text-base">Orbyte • 2023 – Present</p>
+                  <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Developing scalable AI solutions and leading project development for innovative applications.</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="tech-badge text-xs sm:text-sm">AI Development</span>
+                    <span class="tech-badge text-xs sm:text-sm">Project Management</span>
+                    <span class="tech-badge text-xs sm:text-sm">Innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">What I Offer</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Tailored AI and Data Science solutions for your needs</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-chart-bar text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Data Analysis & Visualization</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Transform raw data into actionable insights with interactive, visually compelling dashboards.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">Pandas</span>
+              <span class="tech-badge text-xs">NumPy</span>
+              <span class="tech-badge text-xs">Plotly</span>
+              <span class="tech-badge text-xs">Power BI</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-brain text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Machine Learning Solutions</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Develop robust models for prediction, classification, and clustering to solve complex problems.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">Scikit-learn</span>
+              <span class="tech-badge text-xs">PyTorch</span>
+              <span class="tech-badge text-xs">TensorFlow</span>
+              <span class="tech-badge text-xs">XGBoost</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-eye text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Computer Vision Applications</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Create advanced pipelines for image classification, object detection, and gesture recognition.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">OpenCV</span>
+              <span class="tech-badge text-xs">CNN</span>
+              <span class="tech-badge text-xs">YOLO</span>
+              <span class="tech-badge text-xs">MediaPipe</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-thumbs-up text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Recommendation Systems</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Design personalized recommendation engines using collaborative and content-based methods.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">Collaborative Filtering</span>
+              <span class="tech-badge text-xs">Content-based</span>
+              <span class="tech-badge text-xs">Matrix Factorization</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-tachometer-alt text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Interactive Dashboards</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Build real-time, user-friendly dashboards with Streamlit and Plotly for data exploration.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">Streamlit</span>
+              <span class="tech-badge text-xs">Plotly</span>
+              <span class="tech-badge text-xs">Dash</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-rocket text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Model Optimization</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Enhance model performance with feature selection (PCA, LDA) and hyperparameter tuning.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">PCA</span>
+              <span class="tech-badge text-xs">LDA</span>
+              <span class="tech-badge text-xs">GridSearchCV</span>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl group">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-500 to-accent rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-box text-xl sm:text-2xl text-white"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Complete Project Delivery</h3>
+            <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Deliver end-to-end solutions from preprocessing to deployment with comprehensive documentation.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-badge text-xs">End-to-End</span>
+              <span class="tech-badge text-xs">Documentation</span>
+              <span class="tech-badge text-xs">Deployment</span>
+              <span class="tech-badge text-xs">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">Featured Projects</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Innovative AI and Data Science solutions for real-world challenges</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
+          <button class="filter-btn active px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gradient-to-r from-primary-500 to-accent text-white font-medium text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-primary-500" data-filter="all">All Projects</button>
+          <button class="filter-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-primary-500/30 text-gray-300 hover:bg-primary-500/10 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-primary-500" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-primary-500/30 text-gray-300 hover:bg-primary-500/10 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-primary-500" data-filter="cv">Computer Vision</button>
+          <button class="filter-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-primary-500/30 text-gray-300 hover:bg-primary-500/10 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-primary-500" data-filter="dashboard">Dashboards</button>
+          <button class="filter-btn px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-primary-500/30 text-gray-300 hover:bg-primary-500/10 text-sm sm:text-base transition-all focus:outline-none focus:ring-2 focus:ring-primary-500" data-filter="web">Web Apps</button>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto" id="projectsGrid">
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="dashboard">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                <i class="fas fa-chart-line text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Healthcare Analytics Dashboard</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Real-time dashboard for healthcare data analysis, featuring disease tracking and predictive analytics.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">Python</span>
+                <span class="tech-badge text-xs">Streamlit</span>
+                <span class="tech-badge text-xs">Plotly</span>
+                <span class="tech-badge text-xs">Pandas</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-star text-yellow-500"></i>
+                  <span>Featured Project</span>
+                </div>
+                <div>2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="cv">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
+                <i class="fas fa-hand-paper text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Sign Language Recognition AI</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Real-time sign language recognition system using deep learning, achieving 94% accuracy.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">OpenCV</span>
+                <span class="tech-badge text-xs">TensorFlow</span>
+                <span class="tech-badge text-xs">MediaPipe</span>
+                <span class="tech-badge text-xs">CNN</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-award text-yellow-500"></i>
+                  <span>94% Accuracy</span>
+                </div>
+                <div>2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="ml">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                <i class="fas fa-graduation-cap text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Student Performance Predictor</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Machine learning model predicting student performance to identify at-risk students early.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">Scikit-learn</span>
+                <span class="tech-badge text-xs">Random Forest</span>
+                <span class="tech-badge text-xs">XGBoost</span>
+                <span class="tech-badge text-xs">Pandas</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-chart-line text-green-500"></i>
+                  <span>92% Accuracy</span>
+                </div>
+                <div>2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="cv">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                <i class="fas fa-user-circle text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Advanced Face Recognition System</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Facial recognition system using PCA and LDA for real-time processing with high accuracy.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">OpenCV</span>
+                <span class="tech-badge text-xs">PCA</span>
+                <span class="tech-badge text-xs">LDA</span>
+                <span class="tech-badge text-xs">NumPy</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-clock text-blue-500"></i>
+                  <span>Real-time</span>
+                </div>
+                <div>2023</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="web">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+                <i class="fas fa-thumbs-up text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Smart Recommendation Engine</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Recommendation system using collaborative filtering, deployed as a web app with real-time updates.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">Python</span>
+                <span class="tech-badge text-xs">Collaborative Filtering</span>
+                <span class="tech-badge text-xs">SVD</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-users text-green-500"></i>
+                  <span>Multi-user</span>
+                </div>
+                <div>2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card glass-effect rounded-2xl overflow-hidden group" data-category="ml">
+            <div class="relative overflow-hidden">
+              <div class="h-40 sm:h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                <i class="fas fa-chart-bar text-4xl sm:text-5xl text-white opacity-80"></i>
+              </div>
+              <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                <div class="flex gap-3 sm:gap-4">
+                  <button class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fas fa-eye text-sm sm:text-base"></i>
+                  </button>
+                  <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" class="p-2 sm:p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">
+                    <i class="fab fa-github text-sm sm:text-base"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-white mb-2">Sales Forecasting Model</h3>
+              <p class="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">Time-series forecasting model to predict sales trends, optimizing inventory and marketing strategies.</p>
+              <div class="flex flex-wrap gap-2 mb-3 sm:mb-4">
+                <span class="tech-badge text-xs">Python</span>
+                <span class="tech-badge text-xs">Prophet</span>
+                <span class="tech-badge text-xs">Pandas</span>
+                <span class="tech-badge text-xs">Scikit-learn</span>
+              </div>
+              <div class="flex items-center justify-between text-xs sm:text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fas fa-chart-line text-green-500"></i>
+                  <span>90% Accuracy</span>
+                </div>
+                <div>2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider"></div>
+    </section>
+
+<!-- Skills Section -->
+<!-- Skills Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Skills Section</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glass-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .skill-category-toggle {
+            transition: all 0.3s ease;
+        }
+
+        .skill-category-toggle:hover {
+            color: #667eea !important;
+        }
+
+        .skill-category-toggle.collapsed .fa-chevron-down {
+            transform: rotate(-90deg);
+        }
+
+        .skill-category-content {
+            transition: all 0.5s ease;
+            overflow: hidden;
+        }
+
+        .skill-category-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .skill-item {
+            position: relative;
+            padding: 0.75rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateX(5px);
+        }
+
+        .skill-item:hover .skill-percentage {
+            opacity: 1 !important;
+            transform: translateX(-10px);
+        }
+
+        .skill-bar {
+            position: relative;
+            overflow: hidden;
+            background: rgba(107, 114, 128, 0.3);
+            border-radius: 10px;
+            height: 8px;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: fillProgress 2s ease-in-out;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .skill-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes fillProgress {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--progress-width);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .skill-percentage {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: translateX(0);
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        .tech-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .tech-badge:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            position: relative;
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-category:hover::before {
+            opacity: 0.1;
+        }
+
+        .category-icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skill-icon {
+            width: 20px;
+            text-align: center;
+            margin-right: 0.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .language-item:last-child {
+            border-bottom: none;
+        }
+
+        .proficiency-level {
+            font-size: 0.875rem;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-20">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text mb-6 font-display">Technical Skills</h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8">Comprehensive tools and technologies for AI and Data Science excellence</p>
+                <a href="YHJ_resume-1.pdf" download="Youssef_Hesham_Resume.pdf" class="btn-primary text-white px-8 py-4 rounded-xl inline-block font-semibold">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-code category-icon"></i>
+                            Programming Languages
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-python skill-icon"></i> Python
+                                </span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 95%; width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-js skill-icon"></i> JavaScript
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 80%; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-code skill-icon"></i> C++
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 80%; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-java skill-icon"></i> Java
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 80%; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-code skill-icon"></i> R
+                                </span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 75%; width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-php skill-icon"></i> PHP
+                                </span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 75%; width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Management & Databases -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-database category-icon"></i>
+                            Data Management
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-database skill-icon"></i> SQL (T-SQL, DQL, DDL)
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-server skill-icon"></i> SQL Server
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-elephant skill-icon"></i> PostgreSQL
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-database skill-icon"></i> MySQL
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Data Science -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-brain category-icon"></i>
+                            AI & Data Science
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-chart-line skill-icon"></i> Machine Learning
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-search skill-icon"></i> EDA
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-brain skill-icon"></i> Deep Learning
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-eye skill-icon"></i> Computer Vision
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-language skill-icon"></i> NLP
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-tools category-icon"></i>
+                            Tools & Frameworks
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-fire skill-icon"></i> PyTorch
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-table skill-icon"></i> Pandas
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-calculator skill-icon"></i> NumPy
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 90%; width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-chart-bar skill-icon"></i> Power BI
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-table skill-icon"></i> Excel
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-streamlit skill-icon"></i> Streamlit
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 80%; width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Languages -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-users category-icon"></i>
+                            Soft Skills & Languages
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-white mb-4">Core Competencies</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="tech-badge">Leadership</span>
+                                <span class="tech-badge">Emotional Intelligence</span>
+                                <span class="tech-badge">Communication</span>
+                                <span class="tech-badge">Team Working</span>
+                                <span class="tech-badge">Problem Solving</span>
+                                <span class="tech-badge">Critical Thinking</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-white mb-4">Languages</h4>
+                            <div class="space-y-3">
+                                <div class="language-item">
+                                    <span class="text-gray-200 flex items-center gap-2">
+                                        <i class="fas fa-globe skill-icon"></i> English
+                                    </span>
+                                    <span class="proficiency-level">B1 - Intermediate</span>
+                                </div>
+                                <div class="language-item">
+                                    <span class="text-gray-200 flex items-center gap-2">
+                                        <i class="fas fa-globe skill-icon"></i> Arabic
+                                    </span>
+                                    <span class="proficiency-level">Native</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="skill-category glass-effect p-8 rounded-2xl" role="region">
+                    <button class="skill-category-toggle w-full text-left flex items-center justify-between text-xl font-bold text-white mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 rounded-lg p-2">
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-cogs category-icon"></i>
+                            Specialized Tools
+                        </span>
+                        <i class="fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="skill-category-content space-y-6">
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-brain skill-icon"></i> TensorFlow
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-brain skill-icon"></i> Scikit-learn
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 85%; width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fas fa-chart-pie skill-icon"></i> Tableau
+                                </span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 80%; width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item group">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-gray-200 flex items-center gap-2 font-medium">
+                                    <i class="fab fa-html5 skill-icon"></i> HTML/CSS
+                                </span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress-width: 75%; width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Toggle functionality for skill categories
+        document.querySelectorAll('.skill-category-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const chevron = toggle.querySelector('.chevron');
+                content.classList.toggle('hidden');
+                chevron.classList.toggle('rotate-180');
+            });
+        });
+
+    </script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 font-display">Get In Touch</h2>
+          <p class="text-base sm:text-lg text-gray-400 max-w-xl mx-auto">Collaborate on innovative AI and Data Science projects</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 max-w-7xl mx-auto">
+          <div class="space-y-4 sm:space-y-6">
+            <h3 class="text-lg sm:text-xl font-bold gradient-text mb-3 sm:mb-4">Connect With Me</h3>
+            <p class="text-gray-300 text-sm sm:text-base">Open to freelance projects and collaborations in AI and Data Science. Reach out via email, LinkedIn, or the contact form.</p>
+            <div class="space-y-3 sm:space-y-4">
+              <div class="flex items-center gap-2 sm:gap-3 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-envelope text-primary-500 text-base sm:text-lg"></i>
+                <a href="mailto:youssefheshamjadallah@gmail.com" class="hover:text-primary-500 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500">youssefheshamjadallah@gmail.com</a>
+              </div>
+              <div class="flex items-center gap-2 sm:gap-3 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-phone text-primary-500 text-base sm:text-lg"></i>
+                <span>+20 101 184 1977</span>
+              </div>
+              <div class="flex items-center gap-2 sm:gap-3 text-gray-300 text-sm sm:text-base">
+                <i class="fas fa-map-marker-alt text-primary-500 text-base sm:text-lg"></i>
+                <span>Alexandria, Egypt</span>
+              </div>
+            </div>
+            <div class="flex gap-3 sm:gap-4">
+              <a href="https://www.linkedin.com/in/youssef-hesham-jadallah-435906298/" target="_blank" rel="noopener noreferrer" class="btn-outline text-white w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500">
+                <i class="fab fa-linkedin-in text-base sm:text-lg"></i>
+              </a>
+              <a href="https://github.com/Youssef-Hesham-Jadallah" target="_blank" rel="noopener noreferrer" class="btn-outline text-white w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500">
+                <i class="fab fa-github text-base sm:text-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div class="glass-effect p-6 sm:p-8 rounded-2xl">
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-4 sm:mb-6">Send a Message</h3>
+            <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4 sm:space-y-6">
+              <div>
+                <label for="name" class="block text-xs sm:text-sm font-medium text-gray-300 mb-2">Name *</label>
+                <input type="text" id="name" name="name" required class="contact-form w-full p-3 rounded-lg text-sm sm:text-base text-white focus:outline-none" />
+              </div>
+              <div>
+                <label for="email" class="block text-xs sm:text-sm font-medium text-gray-300 mb-2">Email *</label>
+                <input type="email" id="email" name="email" required class="contact-form w-full p-3 rounded-lg text-sm sm:text-base text-white focus:outline-none" />
+              </div>
+              <div>
+                <label for="message" class="block text-xs sm:text-sm font-medium text-gray-300 mb-2">Message *</label>
+                <textarea id="message" name="message" rows="4" required class="contact-form w-full p-3 rounded-lg text-sm sm:text-base text-white focus:outline-none"></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <p class="text-sm text-gray-400">© 2023 Youssef Hesham Jadallah. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
